@@ -1,38 +1,81 @@
-.App {
+:root {
+  --bg: rgb(48, 43, 39);
+}
+
+.topBar {
+  height: 10vh;
+  width: 100%;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+  background-color: var(--bg);
+  display: flex;
+  flex-direction: row;
 }
 
-.App-link {
-  color: #61dafb;
+.buttons {
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 20%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.buttons button {
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  height: 100%;
+  width: 33.3%;
+  color: azure;
+  background-color: rgb(87, 108, 168);
+  transition-timing-function: ease-in-out;
+  transition: background-color 200ms;
+}
+
+.buttons button:hover {
+  background-color:rgba(39, 70, 144);
+}
+
+.buttons button:disabled {
+  color: white;
+  background-color: rgb(27, 38, 79);
+}
+
+.maskSelection {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 10%;
+}
+
+.middle {
+  font-size: 150%;
+  font-weight: bold;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 40%;
+}
+
+.stats {
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 10%;
+}
+
+.scroller {
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 20%;
+}
+
+.playground {
+  height: 80vh;
+}
+
+.bottomBar {
+  color: white;
+  height: 10vh;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
 }

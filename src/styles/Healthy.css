@@ -1,0 +1,6 @@
+.Healthy {
+    background: url("../pictures/blue.jpg");
+    width: 10px;
+    height: 10px;
+    z-index: 3;
+}
